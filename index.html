@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Chat Sim</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script src="scripts.js"></script>
+</head>
+
+<body>
+  <div class="chat-container">
+    <div id="chats" class="chat-messages">
+      <div class="aligner" id="messages"></div>
+    </div>
+    <form onsubmit="addMsg(event)" class="chat-form">
+      <label>
+        <input type="text" placeholder="Type here">
+      </label>
+      <input class="hidden" type="submit" value="Post" />
+    </form>
+  </div>
+  <script>
+    document.getElementById('chats').style.minHeight = (window.innerHeight - 60) + "px";
+  </script>
+</body>
+
+</html>
