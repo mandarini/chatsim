@@ -9,13 +9,14 @@ function addMsg(e) {
   text.appendChild(document.createTextNode("Message number "+i));
   message.appendChild(user);
   message.appendChild(text);
+  message.setAttribute('id', i);
   message.classList.add("chat-msg");
   document.getElementById("messages").appendChild(message);
+  message.scrollIntoView();
   i++;
   return false;
 }
 
 document.addEventListener('focusout', e => {
-  window.scrollTo(0, 0);
+  document.getElementById(i).scrollIntoView();
 });
-

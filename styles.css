@@ -2,7 +2,7 @@
 
 .chat-messages {
   overflow: scroll;
-  padding-bottom: 66px;
+  padding-bottom: 75px;
   min-height: 500px;
   /* leaves space for input */
   display: flex;
