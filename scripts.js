@@ -11,7 +11,11 @@ function addMsg(e) {
   message.appendChild(text);
   message.classList.add("chat-msg");
   document.getElementById("messages").appendChild(message);
-  message.scrollIntoView();
   i++;
   return false;
 }
+
+document.addEventListener('focusout', e => {
+  window.scrollTo(0, 0);
+});
+
